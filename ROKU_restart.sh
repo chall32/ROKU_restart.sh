@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Tested on a ROKU 2 - 2720x
 # This will restart a ROKU assuming the navigation is the same for all models
