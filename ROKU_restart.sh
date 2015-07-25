@@ -1,7 +1,8 @@
 #!/bin/bash
-
 # Tested on a ROKU 2 - 2720x
 # This will restart a ROKU assuming the navigation is the same for all models
+# example: $./ROKU_restart.sh <target ip>
+# http://x42.obscurechannel.com/2015/07/25/restart-a-roku-via-bash/
 
 ShowUsage() {
   echo "usage: $0 <ROKU IP>"
