@@ -3,6 +3,7 @@
 # This will restart a ROKU assuming the navigation is the same for all models
 # example: $./ROKU_restart.sh <target ip>
 # http://x42.obscurechannel.com/2015/07/25/restart-a-roku-via-bash/
+# Tweaked navigation to reboot UK NowTV (http://www.nowtv.com/) Boxes
 
 ShowUsage() {
   echo "usage: $0 <ROKU IP>"
@@ -29,6 +30,6 @@ done
 
 if [[ -n "$TARGET" ]]; then
 
-        curl -d '' http://$TARGET:8060/keypress/home && curl -d '' http://$TARGET:8060/keypress/up && curl -d '' http://$TARGET:8060/keypress/right && curl -d '' http://$TARGET:8060/keypress/up && curl -d '' http://$TARGET:8060/keypress/right && curl -d '' http://$TARGET:8060/keypress/down && curl -d '' http://$TARGET:8060/keypress/down && curl -d '' http://$TARGET:8060/keypress/down && curl -d '' http://$TARGET:8060/keypress/down && curl -d '' http://$TARGET:8060/keypress/right && curl -d '' http://$TARGET:8060/keypress/select
+        curl -d '' http://$TARGET:8060/keypress/home && curl -d '' http://$TARGET:8060/keypress/up && curl -d '' http://$TARGET:8060/keypress/right && curl -d '' http://$TARGET:8060/keypress/up && curl -d '' http://$TARGET:8060/keypress/right && curl -d '' http://$TARGET:8060/keypress/down && curl -d '' http://$TARGET:8060/keypress/down && curl -d '' http://$TARGET:8060/keypress/right && curl -d '' http://$TARGET:8060/keypress/select
 
 fi
